@@ -1,0 +1,15 @@
+version: '3'
+services:
+        jenkins:
+                image: 'jenkins/jenkins:lts'
+                container_name: jenkins
+                restart: always
+                ports:
+                    - '8888:8080'
+                    - '50000:50000'
+                volumes:
+                    - '/mydata/jenkins_home:/var/jenkins_home'
+                    - '/usr/local/java/jdk1.8.0_161:/usr/java/jdk1.8.0_161'
+                    - '/var/run/docker.sock:/var/run/docker.sock'
+                environment:
+                    TZ: Asia/Shanghai
