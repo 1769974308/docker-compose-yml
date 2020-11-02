@@ -10,19 +10,19 @@
 2. 下载稳定版本：$ sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 3. 可执行权限应用于二进制：$ sudo chmod +x /usr/local/bin/docker-compose
 4. 创建软链接：$ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
-5.  测试：$ docker-compose --version
+5. 测试：$ docker-compose --version
 
 #### 使用说明
 
-1.创建并启动配置的容器:docker-compose -f   xxx.yaml up
-2.指定服务名称来启动:docker-compose -f xxx.yaml up  服务名1 服务名2
-3.后台全部启动:docker-compose -f  xxx.yaml up -d
-4.启动单个服务：docker-compose -f xxx.yaml start 服务名
-5.停止单个服务：docker-compose -f xxx.yaml stop 服务名
-6.重启单个服务：docker-compose  -f xxx.yaml restart 服务名
-7.列表所有容器: docker-compose -f xxx.yaml ps
-8.拉取服务依赖镜像： docker-compsoe -f xxx.yaml pull
-9.设置指定服务运行的容器个数：docker-compose scale web=3 db=2
+1. 创建并启动配置的容器:docker-compose -f   xxx.yaml up
+2. 指定服务名称来启动:docker-compose -f xxx.yaml up  服务名1 服务名2
+3. 后台全部启动:docker-compose -f  xxx.yaml up -d
+4. 启动单个服务：docker-compose -f xxx.yaml start 服务名
+5. 停止单个服务：docker-compose -f xxx.yaml stop 服务名
+6. 重启单个服务：docker-compose  -f xxx.yaml restart 服务名
+7. 列表所有容器: docker-compose -f xxx.yaml ps
+8. 拉取服务依赖镜像： docker-compsoe -f xxx.yaml pull
+9. 设置指定服务运行的容器个数：docker-compose scale web=3 db=2
 
 
 
